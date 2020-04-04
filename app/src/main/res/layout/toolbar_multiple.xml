@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBar"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsingbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:fitsSystemWindows="true"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/image_view_40"
+            android:layout_height="@dimen/image_view_40"
+            android:layout_gravity="center_vertical|left"
+            android:paddingBottom="@dimen/padding_left_10"
+            android:paddingLeft="@dimen/padding_left_10"
+            android:paddingRight="@dimen/padding_right_15"
+            android:paddingTop="@dimen/padding_left_10"
+            android:src="@drawable/btn_done"
+            />
+        <com.t3h.myprojectnoteupdate.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-2dp"
+            android:gravity="center"
+            android:text="@string/Edit_note_title"
+            app:textFontPath="montserrat_light.ttf"
+            android:textColor="@color/layout_title"
+            android:textSize="@dimen/text_size_toolbar_22" />
+
+
+        <com.t3h.myprojectnoteupdate.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_done"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical|right"
+            android:paddingTop="@dimen/padding_left_10"
+            android:paddingLeft="@dimen/padding_left_10"
+            android:paddingBottom="@dimen/padding_left_10"
+            android:paddingRight="@dimen/padding_right_15"
+            android:text="@string/done"
+            app:textFontPath="montserrat_regular.ttf"
+            android:textColor="@color/btn_done_color"
+            android:textSize="@dimen/text_done_16" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="65dp"
+            android:background="@color/line"
+            />
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>

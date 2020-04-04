@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_toolbar_22">22dip</dimen>
+    <dimen name="image_view_40">40dip</dimen>
+    <dimen name="padding_left_10">10dip</dimen>
+    <dimen name="padding_right_15">15dip</dimen>
+    <dimen name="text_done_16">16sp</dimen>
+</resources>
